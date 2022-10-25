@@ -1,0 +1,210 @@
+html {
+	font-size: 35px;
+	background-color: #66CDAA;
+	background-image: linear-gradient(315deg, ##66CDAA 0%, #d5d0e5 74%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+
+.points {
+	color: rgb(104, 94, 114);
+	height: 10px;
+	margin-top: 15px;
+	margin-bottom:15px;
+}
+
+.hs {
+	padding-right: 30px;
+	padding-left: 10px;
+	padding-bottom: 30px;
+
+}
+
+.score {
+	padding-right: 30px;
+	padding-left: 10px;
+	padding-bottom: 30px;
+
+}
+
+.start{
+	margin-top: 30px;
+	margin-bottom:20px;
+	align-items: center;
+	background-color: #3EB2FD;
+	background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+	background-size: calc(100% + 20px) calc(100% + 20px);
+	border-radius: 100px;
+	border-width: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: CircularStd,sans-serif;
+	height: auto;
+	justify-content: center;
+	line-height: 1.5;
+	padding: 2px 2px;
+	text-align: center;
+	transition: background-color .2s,background-position .2s;
+}
+
+.play {
+    width: 600px;
+    height: 380px;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    
+}
+
+.hole{
+    flex: 1 1 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after{
+    display:block;
+    background: url(dirt.png) bottom center no-repeat;
+    background-size:contain;
+    content: '';
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    bottom: -10px;
+}
+
+.mole {
+    background: url('Mole_2.png') bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 50%;
+	bottom: 50px;
+    transition: all 0.2s;
+}
+
+.hole.show .mole{
+    top:52%;
+}
+
+button{
+    width:175px;
+    font-size: 35px;
+    height: 70px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px){
+
+
+    .hole.show .mole{
+        top:52%;
+    }
+}
+
+@media (max-width: 667px){
+	
+
+    .play {
+        width: 667px;
+        height: 300px;
+        display:flex;
+        flex-wrap:wrap;
+        margin: 0 auto;
+    }
+
+    .points {
+		display:flex;
+        flex-wrap:wrap;
+		color: rgb(104, 94, 114);
+		height: 10px;
+		margin-top: 15px;
+		margin-bottom:15px;
+		position:relative;
+		left:10%;
+	}
+
+	.hs {
+		padding-right: 10px;
+		padding-left: 5px;
+		padding-bottom: 10px;
+
+	}
+
+	.score {
+		padding-right: 10px;
+		padding-left: 5px;
+		padding-bottom: 10px;
+
+	}
+
+	.start{
+		margin-top: 30px;
+		margin-bottom:20px;
+		align-items: center;
+		background-color: #3EB2FD;
+		background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+		border-radius: 100px;
+		border-width: 0;
+		box-shadow: none;
+		box-sizing: border-box;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-family: CircularStd,sans-serif;
+		height: 30%;
+		width: 30%;
+		justify-content: center;
+		line-height: 1.5;
+		padding: 2px 2px;
+		text-align: center;
+		transition: background-color .2s,background-position .2s;
+	}
+
+
+    .hole:after{
+        display:block;
+        background: url(dirt.png) bottom center no-repeat;
+        background-size:contain;
+        content: '';
+        max-width: 70%;
+        height: 30%;
+        position: absolute;
+        z-index: 2;
+        bottom: -10px;
+    }
+
+    .mole {
+        background: url('Mole_2.png') bottom center no-repeat;
+        background-size: 60%;
+        position: absolute;
+        top: 100%;
+        max-width: 70%;
+        height: 50%;
+		bottom: 50px;
+        transition: all 0.4s;
+    }
+
+     .hole.show .mole{
+        top:46%;
+    }
+}
