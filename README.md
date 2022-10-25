@@ -9,7 +9,7 @@ This is a simple funny game. In this game a mole will appear randomly from holes
   <li>Javascript</li>
  </ul>
  
-  ## Setup
+  ## Launch
  Download this repository and extract into a folder. Open the index.html file through any browser to explore the game.<br>
  
  ## Demo
